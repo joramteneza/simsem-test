@@ -79,7 +79,7 @@ export function TravelAdventures() {
             {adventures.map((adventure) => (
               <div
                 key={adventure.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-white rounded-2xl shadow-md overflow-hidden"
               >
                 <div className="relative">
                   <Image
@@ -105,21 +105,18 @@ export function TravelAdventures() {
                       }
                     />
                   </button>
+                  <div className="absolute bottom-0 bg-white h-10 rounded-t-2xl w-full "></div>
                 </div>
-
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold mb-1">
+                <div className="px-6 pt-0 pb-10 rounded-t-2xl">
+                  <h3 className="text-center text-navy-blue-800 text-xl font-semibold mb-1">
                     {adventure.title}
                   </h3>
-                  <p className="text-gray-500 text-sm mb-3">
-                    {adventure.location}
-                  </p>
-                  <p className="text-gray-600 mb-4 text-sm">
+                  <p className="text-center text-gray-600 mb-4 text-sm font-barlow">
                     {adventure.description}
                   </p>
                   <Button
                     onClick={() => handleBookNowClick(adventure.id)}
-                    className="w-full rounded-tl-2xl rounded-br-2xl rounded-tr-none rounded-bl-none cursor-pointer px-20 bg-orange-500 hover:bg-orange-600 text-white"
+                    className="w-full font-barlow rounded-tl-2xl rounded-br-2xl rounded-tr-none rounded-bl-none cursor-pointer px-20 bg-orange-500 hover:bg-orange-600 text-white"
                   >
                     Book Your Spot
                   </Button>

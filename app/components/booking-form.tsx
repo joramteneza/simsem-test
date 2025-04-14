@@ -54,10 +54,6 @@ export function BookingForm({ onClose, adventureId }: BookingFormProps) {
     tourists: [{ name: "", email: "" }],
   });
 
-  console.log("adventuresadventures 1", adventures);
-  console.log("adventuresadventures 2", adventureId);
-  console.log("adventuresadventures 3", formData);
-
   // Fetch list of adventures from API/Firestore on mount
   useEffect(() => {
     const fetchAdventures = async () => {
